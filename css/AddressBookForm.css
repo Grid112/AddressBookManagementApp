@@ -1,13 +1,11 @@
-bodybody {
+body {
     margin: 0;
     height: 100%;
 }
 
 .header {
     padding: 15px 0;
-    background-color: #ffffff;
-    width: 100%;
-    height: 106px;
+    background-color: #fff;
 }
 
 .header-content {
@@ -15,45 +13,45 @@ bodybody {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 1px solid green;
+    border: 0px solid #008CFF;
 }
 
 .logo-content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 0px solid green;
+    border: 0px solid #008CFF;
     width: 80%;
 }
 
-.logo-content img {
-    border: 0px solid #42515f;
-    width: 50px;
-    height: 47px;
+.logo-content-img {
+    border: solid 0px #42515f;
 }
 
-.addressBook-text {
-    font: normal normal bold 20px/25px Montserrat;
+.address-text {
+    font: normal normal bold 22px/25px Montserrat;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
-    color: #82a70c;
-    text-transform: capitalize;
-    width: 127px;
-    height: 27px;
+    color: #008CFF;
+    text-transform: uppercase;
 }
 
-.addressBook-payroll {
-    color: rgb(54, 82, 75);
+.address-book {
+    color: #42515F;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .form-content {
-    min-height: calc(100% - 88px);
-    background-color: #f7f7f7;
+    min-height: calc(100% - 80px);
+    background: #F7F7F7 0% 0% no-repeat padding-box;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 0px solid green;
-    padding: 25px 25px;
+    flex-direction: column;
 }
 
 .form {
@@ -67,13 +65,23 @@ bodybody {
 }
 
 .form-head {
-    text-align: left;
-    font: normal normal bold 28px/37px Roboto;
+    width: 65%;
+    height: 108px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font: normal normal normal 28px/37px Roboto;
     letter-spacing: 0px;
-    color: #42515F;
-    text-transform: capitalize;
+    color: #fff;
+    background-color: #008CFF;
+    text-transform: uppercase;
     opacity: 1;
-    padding: 20px;
+    align-items: center;
+}
+
+#img {
+    padding-left: 290px;
+    padding-right: 40px;
 }
 
 .row-content {
@@ -84,8 +92,10 @@ bodybody {
     border: 0px solid green;
 }
 
-.lebel {
-    min-width: 140px;
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 label {
@@ -93,67 +103,30 @@ label {
     display: inline-block;
 }
 
-
-
-* {
-    box-sizing: border-box;
-}
 .text {
     text-align: left;
     font: normal normal normal 18px/24px Roboto;
     letter-spacing: 0px;
-    color: #42515f;
+    color: #42515F;
     opacity: 1;
-    margin-bottom: 10px;
 }
 
 .input {
     width: 100%;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    border: 1px solid #bdbdbd;
-    border-radius: 3px;
-    opacity: 1;
-    resize: horizontal;
-    padding: 10px 12px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 }
 
-textarea {
-    height: 80%;
-    width: 100%;
-    resize: none;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    border: 1px solid #bdbdbd;
-    border-radius: 3px;
-    letter-spacing: -1px;
-    opacity: 1;
-    padding-bottom: 60px;
-    padding-left: 10px;
-    padding-top: 10px;
+.input-content {
+    width: 300px;
+    margin-right: 10px;
 }
 
-.column-constrains {
-    display: flex;
-    flex-flow: row wrap;
-    padding-top: 19px;
-}
-
-.column-content {
-    flex: 2;
-}
-
-select {
-    padding: 7px;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    border: 1px solid #bdbdbd;
-    border-radius: 1px;
-    text-align: left;
-    font: normal normal normal 18px/24px Roboto;
-    letter-spacing: 0px;
-    color: #42515f;
-    opacity: 1;
-    width: 80%;
-}
-
-.zipcode {
-    padding: 11px 10px;
+error-output {
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
 }
